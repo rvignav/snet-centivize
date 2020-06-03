@@ -1,0 +1,26 @@
+{
+    "org_name": "Centivize",
+    "org_id": "centivize-org",
+    "org_type": "individual",
+    "description": {},
+    "assets": {},
+    "contacts": [],
+    "groups": [
+        {
+            "group_name": "default_group",
+            "group_id": "dcSx20EuZRIq6Jab1AsCXftPOCVEM5J3DYRB1FsdMcg=",
+            "payment": {
+                "payment_address": "0x89E58AF872b225d3ef94Ee7524880a57d014C826",
+                "payment_expiration_threshold": 100,
+                "payment_channel_storage_type": "etcd",
+                "payment_channel_storage_client": {
+                    "connection_timeout": "100s",
+                    "request_timeout": "5s",
+                    "endpoints": [
+                        "http://127.0.0.1:2379"
+                    ]
+                }
+            }
+        }
+    ]
+}

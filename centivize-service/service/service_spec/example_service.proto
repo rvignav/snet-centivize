@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package example_service;
+
+message Paragraphs {
+    string par1 = 1;
+    string par2 = 2;
+}
+
+message Paragraph {
+    string par = 1;
+    int32 num = 2;
+}
+
+message Similarity {
+    float value = 1;
+}
+
+message Summary {
+    string value = 1; 
+}
+
+service Centivize {
+    rpc summarize(Paragraphs) returns (Summary) {}
+    rpc similarity(Paragraphs) returns (Similarity) {}
+}

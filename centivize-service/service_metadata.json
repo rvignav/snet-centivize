@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "display_name": "SNET Example Service",
+    "encoding": "proto",
+    "service_type": "grpc",
+    "model_ipfs_hash": "QmNikSzLDVmSaccbjgxKy2PfjRvc6cyTsBTtveAaVexNXa",
+    "mpe_address": "0x8FB1dC8df86b388C7e00689d1eCb533A160B4D0C",
+    "groups": [
+        {
+            "group_name": "default_group",
+            "endpoints": [
+                "http://138.197.215.173:5001"
+            ],
+            "pricing": [
+                {
+                    "price_model": "fixed_price",
+                    "price_in_cogs": 1,
+                    "default": true
+                }
+            ],
+            "group_id": "dcSx20EuZRIq6Jab1AsCXftPOCVEM5J3DYRB1FsdMcg="
+        }
+    ],
+    "assets": {},
+    "service_description": {
+        "description": "Summarization of long paragraphs, similarity between two paragraphs.",
+        "url": "https://centivize.tech"
+    }
+}
