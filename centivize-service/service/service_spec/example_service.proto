@@ -21,6 +21,6 @@ message Summary {
 }
 
 service Centivize {
-    rpc summarize(Paragraphs) returns (Summary) {}
+    rpc summarize(Paragraph) returns (Summary) {}
     rpc similarity(Paragraphs) returns (Similarity) {}
 }
