@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "display_name": "SNET Example Service",
+    "display_name": "Centivize",
     "encoding": "proto",
     "service_type": "grpc",
     "model_ipfs_hash": "QmNikSzLDVmSaccbjgxKy2PfjRvc6cyTsBTtveAaVexNXa",
@@ -9,7 +9,7 @@
         {
             "group_name": "default_group",
             "endpoints": [
-                "http://138.197.215.173:5001"
+                "http://167.172.219.7:5001"
             ],
             "pricing": [
                 {
