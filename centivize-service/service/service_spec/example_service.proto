@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package example_service;
+package centivize_service;
 
 message Paragraphs {
     string par1 = 1;
