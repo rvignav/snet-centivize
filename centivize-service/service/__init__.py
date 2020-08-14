@@ -1,5 +1,5 @@
 registry = {
-    "example_service": {
+    "centivize_service": {
         "grpc": 7003,
     },
 }
