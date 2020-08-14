@@ -14,7 +14,7 @@ from service import summarize
 from service import similarity
 
 logging.basicConfig(level=10, format="%(asctime)s - [%(levelname)8s] - %(name)s - %(message)s")
-log = logging.getLogger("example_service")
+log = logging.getLogger("centivize_service")
 
 # Create a class to be added to the gRPC server
 # derived from the protobuf codes.
