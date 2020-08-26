@@ -7,8 +7,8 @@ import concurrent.futures as futures
 import service.common
 
 # Importing the generated codes from buildproto.sh
-import service.service_spec.example_service_pb2_grpc as grpc_bt_grpc
-from service.service_spec.example_service_pb2 import Summary, Similarity
+import service.service_spec.centivize_service_pb2_grpc as grpc_bt_grpc
+from service.service_spec.centivize_service_pb2 import Summary, Similarity
 
 from service import summarize
 from service import similarity
