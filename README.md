@@ -48,8 +48,8 @@ Docker and DigitalOcean Droplet server code for uploading Centivize's summarizat
     
     git clone https://github.com/rvignav/snet-centivize.git
     cd snet-centivize
-    pip install torch torchvision nltk transformers
-    pip install -U sentence-transformers==0.3.4
+    pip3 install torch torchvision nltk transformers
+    pip3 install -U sentence-transformers==0.3.4
     cd centivize-service
     sh buildproto.sh
     python3 run_centivize_service.py --daemon-config snetd.config.json
