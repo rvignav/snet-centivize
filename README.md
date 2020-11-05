@@ -51,4 +51,5 @@ Docker and DigitalOcean Droplet server code for uploading Centivize's summarizat
     pip install torch torchvision nltk transformers
     pip install -U sentence-transformers==0.3.4
     cd centivize-service
+    sh buildproto.sh
     python3 run_centivize_service.py --daemon-config snetd.config.json
