@@ -1,21 +1,23 @@
 # snet-centivize
+
 Docker and DigitalOcean Droplet server code for uploading Centivize's summarization and similarity ML algorithms to SingularityNET for public use.
 
 **Usage - Command Line (SingularityNET CLI)**
 
-*Similarity Service*
+_Similarity Service_
 
 `snet client call centivize-org centivize default_group similarity '{"par1":"[INSERT PARAGRAPH 1 HERE]","par2":"[INSERT PARAGRAPH 2 HERE]"}' -y`
 
-*Summarization Service*
+_Summarization Service_
+
 1. `nano /tmp/my_paragraph.txt`
-2. Insert your long paragraph, then save and close the file (`^O, ^X`). 
+2. Insert your long paragraph, then save and close the file (`^O, ^X`).
 3. `snet client call centivize-org centivize default_group summarize '{"file@par": "/tmp/my_paragraph.txt", "num": [YOUR NUMBER HERE, recommended number is 11]}' -y`
 
 **Configuration (DigitalOcean Droplet)**
 
     ssh root@<droplet-ip>
-    
+
     ORGANIZATION_ID="centivize"-org
     ORGANIZATION_NAME="Centivize"
     SERVICE_ID=centivize
@@ -45,11 +47,19 @@ Docker and DigitalOcean Droplet server code for uploading Centivize's summarizat
         -v $SNET_CLI_HOST:$SNET_CLI_CONTAINER \
         -v $ETCD_HOST:$ETCD_CONTAINER \
         -ti snet_publish_service bash
-    
+
     git clone https://github.com/rvignav/snet-centivize.git
     cd snet-centivize
     pip3 install torch torchvision nltk transformers
     pip3 install -U sentence-transformers==0.3.4
     cd centivize-service
     sh buildproto.sh
+    python3 run_centivize_service.py --daemon-config snetd.config.json
+
+To test the service, run
+
+    python3 test_centivize_service.py
+
+instead of
+
     python3 run_centivize_service.py --daemon-config snetd.config.json
