@@ -16,6 +16,8 @@ _Summarization Service_
 
 **Configuration (DigitalOcean Droplet)**
 
+First, download the Daemon [here](https://github.com/singnet/snet-daemon/releases/tag/v4.0.0) and run `sudo cp snetd /usr/local/bin/snetd`.
+
     ssh root@<droplet-ip>
 
     ORGANIZATION_ID="centivize"-org
@@ -54,12 +56,12 @@ _Summarization Service_
     pip3 install -U sentence-transformers==0.3.9
     cd centivize-service
     sh buildproto.sh
-    python3 run_centivize_service.py --daemon-config snetd.config.json
+    sudo python3 run_centivize_service.py --daemon-config snetd.config.json
 
 To test the service, run
 
-    python3 test_centivize_service.py
+    sudo python3 test_centivize_service.py
 
 instead of
 
-    python3 run_centivize_service.py --daemon-config snetd.config.json
+    sudo python3 run_centivize_service.py --daemon-config snetd.config.json
