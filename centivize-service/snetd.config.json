@@ -7,7 +7,6 @@
   "PASSTHROUGH_ENDPOINT": "http://localhost:7003",
   "ORGANIZATION_ID": "centivize-org",
   "SERVICE_ID": "centivize",
-  "blockchain_enabled": false,
 
   "PAYMENT_CHANNEL_STORAGE_SERVER": {
     "DATA_DIR": "/opt/singnet/etcd/"
