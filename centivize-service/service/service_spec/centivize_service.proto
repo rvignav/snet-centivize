@@ -9,7 +9,7 @@ message Paragraphs {
 
 message Paragraph {
     string par = 1;
-    int32 num = 2;
+    float num = 2;
 }
 
 message Similarity {

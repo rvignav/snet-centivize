@@ -1,23 +1,22 @@
 {
-   "DAEMON_END_POINT": "0.0.0.0:5001",
-   "BLOCKCHAIN_NETWORK_SELECTED": "ropsten",
-   "ETHEREUM_JSON_RPC_ENDPOINT": "https://ropsten.infura.io/v3/e7732e1f679e461b9bb4da5653ac3fc2",
-   "IPFS_END_POINT": "http://ipfs.singularitynet.io:80",
-   "PASSTHROUGH_ENABLED": true,
-   "PASSTHROUGH_ENDPOINT": "http://localhost:7003",
-   "ORGANIZATION_ID": "centivize-org",
-   "SERVICE_ID": "centivize",
+  "DAEMON_END_POINT": "0.0.0.0:5001",
+  "BLOCKCHAIN_NETWORK_SELECTED": "ropsten",
+  "ETHEREUM_JSON_RPC_ENDPOINT": "https://ropsten.infura.io/v3/e7732e1f679e461b9bb4da5653ac3fc2",
+  "IPFS_END_POINT": "http://ipfs.singularitynet.io:80",
+  "PASSTHROUGH_ENABLED": true,
+  "PASSTHROUGH_ENDPOINT": "http://localhost:7003",
+  "ORGANIZATION_ID": "centivize-org",
+  "SERVICE_ID": "centivize",
+  "blockchain_enabled": false,
 
+  "PAYMENT_CHANNEL_STORAGE_SERVER": {
+    "DATA_DIR": "/opt/singnet/etcd/"
+  },
 
-   "PAYMENT_CHANNEL_STORAGE_SERVER": {
-        "DATA_DIR": "/opt/singnet/etcd/"
-    },
-
-
-   "LOG": {
-        "LEVEL": "debug",
-        "OUTPUT": {
-            "TYPE": "stdout"
-        }
-   }
+  "LOG": {
+    "LEVEL": "debug",
+    "OUTPUT": {
+      "TYPE": "stdout"
+    }
+  }
 }
